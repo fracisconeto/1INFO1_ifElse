@@ -2,16 +2,27 @@
     /*
     Problema: Despesas do aluno com alimentação
     Um aluno recebe um valor de auxílio estudantil de R$ 500,00. Esse valor é utilizado para pagar as despesas com alimentação na universidade.
-    Peça para o aluno informar quanto que gasta diariamente nas refeições. Peça também para informar quantos dias da semana ele faz as refeições na universidade. Calcule e apresente quanto que o aluno gasta por mês com alimentação na universidade.
-    Se o aluno gastar mais do que recebe de auxílio estudantil, informe que ele está gastando muito e precisa rever os seus gastos. Caso contrário, informe que o custo da alimentação está dentro do esperado.
+    Peça para o aluno informar quanto que gasta diariamente nas refeições.
+     Peça também para informar quantos dias da semana ele faz as refeições na universidade.
+      Calcule e apresente quanto que o aluno gasta por mês com alimentação na universidade.
+    Se o aluno gastar mais do que recebe de auxílio estudantil,
+     informe que ele está gastando muito e precisa rever os seus gastos. Caso contrário, informe que o custo da alimentação está dentro do esperado.
     */
     
     //Entrada
-
-
+const gasto =  parseInt (prompt("quantos você gasta de alimentação por dia"));
+const dias =  parseInt (prompt("quantos dias vc  gasta para comer"));
     //Processamento
-
+let soma = gasto * dias
 
     //Saída
-
+if (soma >= 501 ){
+    alert(`vc gasta mais que seu auxilio que é  R$ ${soma} por mes`)
+}
+else if (soma <= 500){
+    alert( `vc gasta R$ ${soma} por mes`)
+}
+else{
+    alert ("valor invalido ")
+}
 </script>

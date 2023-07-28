@@ -5,15 +5,30 @@
     Peça para o usuário informar a quantidade de horas que o evento durou e a quantidade de pessoas que auxiliou na organização do evento.
     Calcule e apresente o valor total que o usuário deverá pagar pelo evento.
     Se o valor total for maior do que R$ 1.500,00, haverá cortesia (não será cobrado) duas horas de evento.
-    Se o valor total for maior do que R$ 2.000,00, haverá cortesia (não será cobrado) duas horas de evento e duas pessoas que auxiliaram na organização do evento.
+    Se o valor total for maior do que R$ 2.000,00, haverá cortesia (não será cobrado)
+     duas horas de evento e duas pessoas que auxiliaram na organização do evento.
     Calcule e apresente o custo final do evento.
     */
-    
+
     //Entrada
-
-
+    const hora = parseInt(prompt("quantas horas o evento durou"));
+    const ser = parseInt(prompt("ensira quantas pessoas auxiliou  para a organizacão "));
+    let pes = 100 * ser;
+    let hr = 300 * hora
+    let total = hr + pes;
     //Processamento
-
+    if (total < 1500) {
+        alert(`vc pagara pelo evento R$ ${total}`)
+    }
+    else if (total < 2000) {
+        alert(`vc pagara pelo evento R$ ${total - 600}`)
+    }
+    else if (total < 2000) {
+        alert(`vc pagara pelo evento R$ ${total - 800}`)
+    }
+    else {
+        alert(`valor invalido`)
+    }
 
     //Saída
 

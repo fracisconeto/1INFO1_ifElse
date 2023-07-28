@@ -1,16 +1,34 @@
 <script>
     /*
     Problema: Votação do líder da equipe
-    Uma equipe, contendo 5 alunos, precisa eleger um líder. Considere que existem dois candidatos a representante: João(1) e Maria(2). Faça um programa que receba o voto de cada aluno e calcule quem foi o representante eleito.
+    Uma equipe, contendo 5 alunos, precisa eleger um líder. Considere que existem dois candidatos a representante:
+     João(1) e Maria(2). Faça um programa que receba o voto de cada aluno e calcule quem foi o representante eleito.
     Apresente o resultado final, com o nome do líder escolhido e a quantidade de votos que recebeu.
     */
-    
-    //Entrada
-
+    const aluno1 = parseInt( prompt("qual aluno você vai votar 1 para joão  e 2 para maria  ").trim());
+    const aluno2 = parseInt( prompt("qual aluno você vai votar 1 para joão  e 2 para maria  ").trim());
+    const aluno3 = parseInt( prompt("qual aluno você vai votar 1 para joão  e 2 para maria  ").trim());
+    const aluno4 = parseInt( prompt("qual aluno você vai votar 1 para joão  e 2 para maria  ").trim());
+    const aluno5 = parseInt( prompt("qual aluno você vai votar 1 para joão  e 2 para maria  ").trim());
 
     //Processamento
+    aluno1 == 1  ? valor1 =  1 : valor1 = -1;
+    aluno2 == 1  ? valor2 =  1 : valor2 = -1;
+    aluno3 == 1  ? valor3 =  1 : valor3 = -1;
+    aluno4 == 1  ? valor4 =  1 : valor4 = -1;
+    aluno5 == 1  ? valor5 =  1 : valor5 = -1;
 
+    let final = valor1 + valor2 + valor3 + valor4 + valor5;
 
     //Saída
+if( final >= 1 ){
+    alert(`joão é o lider  e recebeu ${ final } votos`)
+}
 
+else if (final <= -1){
+    alert(`maria é a lider e rebeu ${final * -1 } votos`)
+}
+ else{
+    alert ("valor invalido")
+ }
 </script>
